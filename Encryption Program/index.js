@@ -1,5 +1,6 @@
 
-
+//Create an encryption program that will encrypt 
+//any message you give it using the key
 const NodeRSA = require('node-rsa');
 const key = new NodeRSA({ b: 1024 });
  
