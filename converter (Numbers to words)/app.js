@@ -60,7 +60,6 @@
         5: "trillion"
     }
 
-    //so when the the form is submitted do what is in this function
     form.submit(function(e){
         //this prevents auto-submission of the form
         e.preventDefault();
@@ -86,7 +85,7 @@
     function convertNum(num){
         let absNum = Math.abs(num);
 
-        //test whether the number is in ones
+        //check number is in ones
         try {
             //if num is bigger than the limit, throw error
             if(num > numLimit){
@@ -98,7 +97,7 @@
             return "ERROR";
         }
 
-        //check whether num is negative
+        //checks if num is negative
         if(num.toString().includes("-") && absNum != 0){
             numText += "negative "
         }
@@ -240,7 +239,7 @@
             }
         }
 
-        //Add whatever is left ot numArray
+        //this adds what is left of numArray
         if(tempArray.length != 0){
             numArray.unshift(tempArray);
         }
