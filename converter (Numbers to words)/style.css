@@ -1,0 +1,42 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(135deg,#71b7e6, #9b59b6 );
+}
+
+.container {
+    max-width: 600px;
+    width: 100%;
+    background: #fff;
+    padding: 25px 30px;
+    border-radius:5px;
+
+}
+
+
+
+.container .test{
+    font-size: 25px;
+    font-weight: 500;
+    position: relative;
+
+}
+
+
+.container .test::before{
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom:0;
+    height: 3px;
+    width: 30px;
+    background: linear-gradient(135deg,#71b7e6, #9b59b6 );
+}
